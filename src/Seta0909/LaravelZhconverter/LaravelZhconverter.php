@@ -25,14 +25,9 @@
             }
         }
 
-        public static function test()
-        {
-            self::getInstance();
-            echo self::translate('測試中', 'CN');
-        }
-
         public static function translate($words, $type)
         {
+            self::getInstance();
             $translated = '';
             for ($i = 0; $i < mb_strlen($words); $i++) {
                 $word = mb_substr($words, $i, 1, "utf-8");
