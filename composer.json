@@ -1,6 +1,8 @@
 {
     "name": "seta0909/laravel-zhconverter",
-    "description": "",
+    "description": "Laravel 繁簡轉換",
+    "license": "MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "seta0909",
