@@ -10,13 +10,25 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "php": "^5.5 | ^7.0 | ^8.0",
+        "illuminate/support": "^5 | ^6 | ^7 | ^8 | ^9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpunit/phpunit": "^5 | ^6 | ^7 | ^8 | ^9"
     },
     "autoload": {
         "psr-0": {
             "Seta0909\\LaravelZhconverter\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": false
+        }
+    }
 }
